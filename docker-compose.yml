@@ -16,7 +16,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - vroappdata: /usr/local/tomcat/webapps
+      - vroappdata:/usr/local/tomcat/webapps
 
   vprodb:
     build:
@@ -45,4 +45,3 @@ services:
 volumes:
   vrodbdata: {}
   vroappdata: {}
-  
